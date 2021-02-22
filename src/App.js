@@ -12,7 +12,7 @@ import './app.style.scss';
 const App = () => {
 
     const [value, setValue] = useState("");
-    const { data } = useFetch('data.json');
+    const { data } = useFetch(process.env.PUBLIC_URL + '/data.json');
     const { dataByCountry } = useDataByCountry(data);
     const { results } = useFilter(data, dataByCountry, value);
 

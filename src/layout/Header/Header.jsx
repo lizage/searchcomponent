@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="header">
             <img 
-                src={'images/logo.png'} 
+                src={process.env.PUBLIC_URL + '/images/logo.png'} 
                 alt="Myndlift logo" 
                 className="header__logo" />
         </div>
