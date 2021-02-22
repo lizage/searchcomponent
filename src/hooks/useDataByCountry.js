@@ -22,30 +22,43 @@ const useDataByCountry = (data) => {
 
             for (let row in data) {
                 if (hasListings(data, row)) {
-                    
-                    // extract country and state names form listing 
-                    let { country, state } = data[row].listings[Object.keys(data[row].listings)[0]];
-                    
-                    // create key name
-                    let key = hasStates(country) ? state.toLowerCase() : country.toLowerCase();
-                    let key_alt = hasStates(country) ? findAltStateName(state.toLowerCase()) : "";
 
+                    // extract country and state names form listing 
+                    const { country, state } = data[row].listings[Object.keys(data[row].listings)[0]];
+                    
+                    const l_country = country.toLowerCase();
+                    const l_state = hasStates(country) ? state.toLowerCase() : "";
+                    const l_state_alt = hasStates(country) ? findAltStateName(state.toLowerCase()) : "";
+                    
                     // push current row id into list
-                    if (list.hasOwnProperty(key)) {
-                        // the key or the alt key already exists
-                        list[key] = [...list[key], row];
+                    if (list.hasOwnProperty(l_country)) {
+                        // the country already exists
+                        list[l_country] = [...list[l_country], row];
                     }
-                    else if (list.hasOwnProperty(key_alt)) {
-                        // the alt key already exists
-                        list[key_alt] = [...list[key_alt], row];
+
+                    if (!list.hasOwnProperty(l_country)) {
+                        // new country
+                        list[l_country] = [row];
                     }
-                    else {
-                        // new key
-                        list[key] = [row];
+
+                    if (list.hasOwnProperty(l_state)) {
+                        // the state name already exists
+                        list[l_state] = [...list[l_state], row];
                     }
+
+                    else if (list.hasOwnProperty(l_state_alt)) {
+                        // the alt state name already exists
+                        list[l_state_alt] = [...list[l_state_alt], row];
+                    }
+
+                    else if (l_state !== "") {
+                        // new state name
+                        list[l_state] = [row];
+                    }
+                    
                 }
             }
-            // console.log(list)
+            console.log(list)
             setDataByCountry(list);
         };
         formatData();
