@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/searchcomponent/static/css/main.b014598d.chunk.css",
-    "main.js": "/searchcomponent/static/js/main.de8334b8.chunk.js",
-    "main.js.map": "/searchcomponent/static/js/main.de8334b8.chunk.js.map",
+    "main.js": "/searchcomponent/static/js/main.ff1f74aa.chunk.js",
+    "main.js.map": "/searchcomponent/static/js/main.ff1f74aa.chunk.js.map",
     "runtime-main.js": "/searchcomponent/static/js/runtime-main.512e7aa0.js",
     "runtime-main.js.map": "/searchcomponent/static/js/runtime-main.512e7aa0.js.map",
-    "static/js/2.f536cab1.chunk.js": "/searchcomponent/static/js/2.f536cab1.chunk.js",
-    "static/js/2.f536cab1.chunk.js.map": "/searchcomponent/static/js/2.f536cab1.chunk.js.map",
+    "static/js/2.462db6d7.chunk.js": "/searchcomponent/static/js/2.462db6d7.chunk.js",
+    "static/js/2.462db6d7.chunk.js.map": "/searchcomponent/static/js/2.462db6d7.chunk.js.map",
     "index.html": "/searchcomponent/index.html",
     "static/css/main.b014598d.chunk.css.map": "/searchcomponent/static/css/main.b014598d.chunk.css.map",
-    "static/js/2.f536cab1.chunk.js.LICENSE.txt": "/searchcomponent/static/js/2.f536cab1.chunk.js.LICENSE.txt",
+    "static/js/2.462db6d7.chunk.js.LICENSE.txt": "/searchcomponent/static/js/2.462db6d7.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/searchcomponent/static/media/AvenirLTStd-Roman.0bfb049d.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.512e7aa0.js",
-    "static/js/2.f536cab1.chunk.js",
+    "static/js/2.462db6d7.chunk.js",
     "static/css/main.b014598d.chunk.css",
-    "static/js/main.de8334b8.chunk.js"
+    "static/js/main.ff1f74aa.chunk.js"
   ]
 }
