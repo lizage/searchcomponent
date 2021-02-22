@@ -1,0 +1,21 @@
+.card_row__specialties {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: auto;
+    > div, div.ReactCollapse--content {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    div.title {
+      font-size: 1.8rem;
+      flex-basis: auto;
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 18rem;
+    }
+    div.chip {
+      width: auto;
+    }
+  }

@@ -1,0 +1,39 @@
+@import "../../assets//sass/mixins";
+
+.card_row__buttons {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 20rem;
+    > div {
+        text-align: center;
+      span {
+        font-weight: 700;
+        cursor: pointer;
+        color: var(--font-color);
+        color:var(--highlight);
+        transition: all 350ms ease-in-out;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      button {
+        color:white;
+        font-size: 1.6rem;
+        padding: 1rem 2.5rem;
+        border-radius: 4rem;
+        margin-top: 2rem;
+        cursor: pointer;
+        background-color: var(--highlight);
+        border: solid 1px var(--highlight);
+        transition: all 350ms ease-in-out;
+        @include box-shadow(4px, 4px, 8px, rgba(0, 0, 0, 0.25));
+        @include rounded();
+        &:hover {
+          background-color: white;
+          border: solid 1px white;
+          color:var(--highlight);
+        }
+      }
+    }
+  }

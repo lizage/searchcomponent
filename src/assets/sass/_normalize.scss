@@ -1,0 +1,47 @@
+
+
+html,
+* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--font-color);
+}
+
+img {
+  border-style: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
